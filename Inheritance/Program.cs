@@ -28,12 +28,22 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var emperorPenguin = new Bird();
+            emperorPenguin.CanFly = false;
+            emperorPenguin.HasTalons = false;
+            Console.WriteLine($"It is {emperorPenguin.CanFly} that an emperor penguin can fly. It has {emperorPenguin.Legs} legs.");
 
             /*Create an object of your Reptile class
-             *  give values to your members using the object of your Bird class
+             *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            var saltwaterCroc = new Reptile();
+            saltwaterCroc.Legs = 4;
+            saltwaterCroc.IsVenomous = false;
+            saltwaterCroc.CanSwim = true;
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine($"It is {saltwaterCroc.CanSwim} that a saltwater crocodile can swim, and it has {saltwaterCroc.Eyes} eyes.");
         }
     }
 }
